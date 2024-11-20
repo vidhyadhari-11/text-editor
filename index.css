@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+#undo-redo{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbtns{
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+#container{
+    width: 300px;
+    height: 50vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    position: relative;
+    display: block; 
+    /* inside content can be anything */
+}
+#btns{
+    margin: 0 auto;
+}
+.highlight.active{
+    background-color: rgb(235, 168, 45);
+    
+}
+.movable-input{
+    position: absolute;
+    padding: 0;
+    width: 0;
+    /* border: 1px solid black; */
+    border: none;
+    cursor: text;
+    user-select: none;
+    min-width: 5px;
+    z-index: 10;
+    transition: width 0.1s;
+}
+.movable-input:focus{
+    border-color: pink;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#lastaddbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 3px;
+}
+
+#addtextbtn{
+    margin-top: 10px;
+}
